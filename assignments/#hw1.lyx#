@@ -1,0 +1,633 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 2.5cm
+\headsep 2.5cm
+\footskip 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 1 - COMM 671
+\end_layout
+
+\begin_layout Author
+Daryl Larsen
+\end_layout
+
+\begin_layout Date
+2022-09-20
+\end_layout
+
+\begin_layout Section
+Show that Expected Utility Theory implies that indifference curves are parallel
+ straight lines in the Machina triangle
+\end_layout
+
+\begin_layout Standard
+I'll start by showing that EUT implies indifference curves are 
+\emph on
+straight
+\emph default
+ lines.
+ Suppose we have a Machina Triangle like the one below and the agent is
+ indifferent between points 
+\begin_inset Formula $I$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ By the independence axiom, the agent must also be indifferent between 
+\begin_inset Formula $N=pM+(1-p)I$
+\end_inset
+
+ and 
+\begin_inset Formula $J=pI+(1-p)M$
+\end_inset
+
+ for any 
+\begin_inset Formula $p\in[0,1].$
+\end_inset
+
+ But then she is indifferent between any points along the straight line
+ connecting 
+\begin_inset Formula $I$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+, so the indifference curve is a straight line.
+\end_layout
+
+\begin_layout Standard
+To show they're parallel, consider 
+\begin_inset Formula 
+\begin{align*}
+M^{\prime} & =pM+(1-p)C\\
+I^{\prime} & =pI+(1-p)C
+\end{align*}
+
+\end_inset
+
+Since the agent is indifferent between 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $I$
+\end_inset
+
+, the independence axiom implies they must also be indifferent between 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ and 
+\begin_inset Formula $I^{\prime}$
+\end_inset
+
+.
+ Since we used the same value 
+\begin_inset Formula $p$
+\end_inset
+
+ to construct the new compound lotteries, the indifference line 
+\begin_inset Formula $I^{\prime}M^{\prime}$
+\end_inset
+
+ must be parallel to the line 
+\begin_inset Formula $IM$
+\end_inset
+
+ by similar triangles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename triangle.png
+	scale 25
+	BoundingBox 0bp 500bp 816bp 1056bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Roulette wheel with N outcomes
+\end_layout
+
+\begin_layout Standard
+(a) 
+\begin_inset Formula $U(W)=\log(W)$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{n}a_{n}=1$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+U(W) & =\sum_{n}p_{i}\log(a_{i}),\\
+L & =\sum_{n}p_{i}\log(a_{i})-\lambda\left(\sum_{n}a_{i}-1\right)\\
+\frac{\partial L}{\partial a_{i}} & =\frac{p_{i}}{a_{i}}-\lambda=0\\
+\implies a_{i} & =\frac{p_{i}}{\lambda}\\
+\text{Set \ensuremath{\lambda=1\implies a_{i}}} & =p_{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the prizes should be set to have the same payout as the probabilities.
+\end_layout
+
+\begin_layout Standard
+Certainty equivalent: 
+\begin_inset Formula $\sum_{n}p_{i}\log(p_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) 
+\begin_inset Formula $U(W)=\frac{1}{1-\gamma}W^{1-\gamma},0<\gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+U(W) & =\frac{1}{1-\gamma}\left(\sum_{n}p_{i}a_{i}\right)^{1-\gamma}\\
+L & =\frac{1}{1-\gamma}\left(\sum_{n}p_{i}a_{i}\right)^{1-\gamma}-\lambda\left(\sum_{n}a_{i}-1\right)\\
+\frac{\partial L}{\partial a_{i}} & =p_{i}(a_{i}p_{i})^{-\gamma}-\lambda=0\\
+\implies a_{i} & =\frac{p_{i}^{1/\gamma-1}}{\lambda^{1/\gamma}}
+\end{align*}
+
+\end_inset
+
+So the prizes should be set to have payouts proportional to the probabilities
+ to the power of 
+\begin_inset Formula $1/\gamma-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Certainty equivalent: 
+\begin_inset Formula $\frac{1}{1-\gamma}(\sum_{n}p_{i}^{2})^{1-\gamma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c) 
+\begin_inset Formula $U(W)=-e^{-bW}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+U(W) & =\sum_{n}-e^{-bp_{i}a_{i}}\\
+L & =\sum_{n}\left(-e^{-bp_{i}a_{i}}\right)-\lambda\left(\sum_{n}a_{i}-1\right)\\
+\frac{\partial L}{\partial a_{i}} & =a_{i}p_{i}be^{-bp_{i}a_{i}}-\lambda=0\\
+\frac{\partial L}{\partial a_{j}} & =a_{j}p_{j}be^{-bp_{j}a_{j}}-\lambda=0\\
+\implies\frac{a_{i}}{a_{j}} & =\frac{p_{i}e^{-bp_{i}a_{i}}}{p_{j}e^{-bp_{j}a_{j}}}
+\end{align*}
+
+\end_inset
+
+so the prizes should be proportional to the probabilities.
+\end_layout
+
+\begin_layout Standard
+Certainty equivalent: 
+\begin_inset Formula $\sum_{n}-e^{-bp_{i}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Two lotteries
+\end_layout
+
+\begin_layout Standard
+(a) 
+\begin_inset Formula $U(W)=-\frac{1}{W}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expected utility from lottery 1: 
+\begin_inset Formula 
+\[
+E[U(W)]=0.5U(10)+0.5U(50)=0.5\left(-\frac{1}{10}\right)+0.5\left(-\frac{1}{50}\right)=-0.06
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expected utility from lottery 2: 
+\begin_inset Formula 
+\[
+E[U(W)]=U(X)=-\frac{1}{X}=-0.06\implies X=\frac{50}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) 
+\begin_inset Formula $U(W)=\log(W)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expected utility from lottery 1:
+\begin_inset Formula 
+\[
+E[U(W)]=0.5U(10)+0.5U(50)=0.5\log10+0.5\log50\approx3.107
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expected utility from lottery 2:
+\begin_inset Formula 
+\[
+E[U(W)]=U(X)=\log X=1.349\implies X=e^{3.107}\approx22.35
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c) 
+\begin_inset Formula $U(W)=\frac{1}{1-\gamma}W^{1-\gamma},\gamma=0.25;0.75$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expected utility from lottery 1: 
+\begin_inset Formula 
+\[
+E[U(W)]=0.5U(10)+0.5U(50)=0.5\frac{1}{1-\gamma}10^{1-\gamma}+0.5\frac{1}{1-\gamma}50^{1-\gamma}\approx16.28,\gamma=0.25;8.87,\gamma=0.75
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expected utility from lottery 2:
+\begin_inset Formula 
+\[
+E[U(W)]=U(X)=\frac{1}{1-\gamma}X^{1-\gamma}=EU(\text{lottery 1})\implies X=28.12,\gamma=0.25;24.23,\gamma=0.75
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Increasing 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ means that the certainty equivalent decreases which implies that higher
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is equivalent to higher risk aversion.
+\end_layout
+
+\begin_layout Section
+Proof of Theorem
+\end_layout
+
+\begin_layout Standard
+Theorem: Suppose that utility functions 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ are twice continuously differentiable with continuous second derivatives
+ and strictly increasing.
+ The following are equivalent: 1) 
+\begin_inset Formula $A_{1}(y)\geq A_{2}(y)$
+\end_inset
+
+ for every 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ 2) 
+\begin_inset Formula $\pi_{1}(y,\tilde{z})\geq\pi_{2}(y,\tilde{z})$
+\end_inset
+
+ for every 
+\begin_inset Formula $y$
+\end_inset
+
+ and every random variable 
+\begin_inset Formula $\tilde{z}$
+\end_inset
+
+.
+ 3) 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ is a concave transformation of 
+\begin_inset Formula $u_{2};$
+\end_inset
+
+ that is, 
+\begin_inset Formula $u_{1}=f\circ u_{2}$
+\end_inset
+
+ for 
+\begin_inset Formula $f$
+\end_inset
+
+ concave and strictly increasing.
+ 4) 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ is at least as risk averse as 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1\implies3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $A_{1}(y)\geq A_{2}(y)$
+\end_inset
+
+ for every 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $u_{1}=f\circ u_{2}=u_{1}(u_{2}^{-1}(t)).$
+\end_inset
+
+ Then 
+\begin_inset Formula $\frac{d}{dt}u_{1}(u_{2}^{-1}(t))=\frac{u_{1}^{\prime}(u_{2}^{-1}(t))}{u_{2}^{\prime}(u_{2}^{-1}(t))}$
+\end_inset
+
+ which is decreasing (concave) iff 
+\begin_inset Formula $\log u_{1}^{\prime}(x)/u_{2}^{\prime}(x)$
+\end_inset
+
+ is, which follows from 
+\begin_inset Formula $A_{1}(y)\geq A_{2}(y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $3\implies2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $u_{1}=f\circ u_{2}$
+\end_inset
+
+ for 
+\begin_inset Formula $f$
+\end_inset
+
+ concave and strictly increasing.
+ 
+\begin_inset Formula $\pi_{1}(y,\tilde{z})=y+E(\tilde{z})-u_{i}^{-1}(E[u_{i}(y+\tilde{z})$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\begin{align*}
+\pi_{1}(y,\tilde{z})-\pi_{2}(y,\tilde{z}) & =u_{2}^{-1}(E[u_{2}(y+\tilde{z})])-u_{1}^{-1}(E[u_{1}(y+\tilde{z})])\\
+ & =u_{2}^{-1}(E[u_{2}(y+\tilde{z})])-u_{1}^{-1}(E[u_{1}(u_{2}^{-1}(u_{2}(y+\tilde{z})))])
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $u_{1}(u_{2}^{-1}(\cdot))$
+\end_inset
+
+ is concave, 
+\begin_inset Formula $E[u_{1}(u_{2}^{-1}(u_{2}(y+\tilde{z})))]\leq u_{1}(u_{2}^{-1}(E[u_{2}(y+\tilde{z})]))$
+\end_inset
+
+ so 
+\begin_inset Formula $\pi_{1}(y,\tilde{z})\geq\pi_{2}(y,\tilde{z})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2\implies1$
+\end_inset
+
+ (actually not 
+\begin_inset Formula $1\implies\text{not }2$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+If 1 does not hold, then 1 holds with 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ interchanged.
+ Then 3 and 2 also hold with 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ interchanged, and therefore do not hold in the correct ordering.
+ This completes the proof.
+\end_layout
+
+\begin_layout Section
+Mean variance does not satisfy independence
+\end_layout
+
+\begin_layout Standard
+Suppose I have two lotteries 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ has high mean but also high variance, while 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ has high mean and smaller variance, so 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ is preferred to 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+.
+ Then consider 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+ which has a high variance and is negatively correlated 
+\end_layout
+
+\end_body
+\end_document
