@@ -1,0 +1,203 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 2.5cm
+\headsep 2.5cm
+\footskip 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 2 Comm671
+\end_layout
+
+\begin_layout Author
+Daryl Larsen
+\end_layout
+
+\begin_layout Date
+2022-10-11
+\end_layout
+
+\begin_layout Section*
+Question 1
+\end_layout
+
+\begin_layout Subsection*
+Consider the lottery delivering the payoff
+\begin_inset Formula 
+\[
+L=\begin{pmatrix}\$10 & \$5 & \$0\\
+p & 1-p-q & q
+\end{pmatrix}
+\]
+
+\end_inset
+
+any such lottery can be represented in a Machina triangle where the vertical
+ side represents the values of 
+\begin_inset Formula $p$
+\end_inset
+
+ from 0 to 1 and the horizontal side represents values of 
+\begin_inset Formula $q$
+\end_inset
+
+ from 0 to 1.
+\end_layout
+
+\begin_layout Enumerate
+On the Machina triangle, show the lottery 
+\begin_inset Formula $L^{*}$
+\end_inset
+
+ for which 
+\begin_inset Formula $p=q=0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show the set of lotteries that first order stochastically dominate 
+\begin_inset Formula $L^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Show the set of lotteries that second order stochastically dominate 
+\begin_inset Formula $L^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Graphics
+	filename triangle_hw2.png
+	scale 50
+	BoundingBox 0bp 550bp 816bp 930bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The red dot shows the lottery 
+\begin_inset Formula $L^{*}$
+\end_inset
+
+ for which 
+\begin_inset Formula $p=q=0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The set of lotteries that first-order stochastically dominate
+\end_layout
+
+\begin_layout Section*
+Question 2
+\end_layout
+
+\begin_layout Subsection*
+Suppose there are five states of nature denoted by 
+\begin_inset Formula $\omega_{1},\omega_{2},...,\omega_{5}$
+\end_inset
+
+ all of which have equal probability.
+ Consider two risky assets with rates of returns and 
+\begin_inset Formula $\tilde{r}_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tilde{r}_{B}$
+\end_inset
+
+ as follows:
+\end_layout
+
+\end_body
+\end_document

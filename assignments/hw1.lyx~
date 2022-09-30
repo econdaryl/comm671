@@ -626,7 +626,31 @@ Suppose I have two lotteries
 \begin_inset Formula $L_{3}$
 \end_inset
 
- which has a high variance and is negatively correlated 
+ which has a high variance and is negatively correlated with 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ but positively correlated with 
+\begin_inset Formula $L_{2}.$
+\end_inset
+
+ Then the combination lottery of 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+ will be preferred to the combination of 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+, which violates the independence axiom.
 \end_layout
 
 \end_body

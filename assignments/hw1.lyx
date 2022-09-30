@@ -626,7 +626,8 @@ Suppose I have two lotteries
 \begin_inset Formula $L_{3}$
 \end_inset
 
- which has a high variance and is negatively correlated with 
+ which has a positive mean and high variance and is negatively correlated
+ with 
 \begin_inset Formula $L_{1}$
 \end_inset
 
