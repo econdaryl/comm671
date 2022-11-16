@@ -1,0 +1,308 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 2.5cm
+\headsep 2.5cm
+\footskip 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 3
+\end_layout
+
+\begin_layout Author
+Daryl Larsen
+\end_layout
+
+\begin_layout Date
+2022-Nov-21
+\end_layout
+
+\begin_layout Section
+Question 1
+\end_layout
+
+\begin_layout Subsection*
+Consider a one-period financial market with 4 states of the world and two
+ risky assets.
+\end_layout
+
+\begin_layout Enumerate
+Is this market arbitrage free?
+\end_layout
+
+\begin_layout Enumerate
+Determine the set of risk neutral measures
+\end_layout
+
+\begin_layout Enumerate
+Characterize the set of attainable contingent claims in the space of payoff
+ 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the maximum and minimum price of the contingent claim paying divident
+ 
+\begin_inset Formula $D=(40,30,20,10)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1.
+ A market is arbitrage free if 
+\begin_inset Formula $\begin{bmatrix}-S^{\prime}\\
+D^{\prime}
+\end{bmatrix}\pi\ngtr0$
+\end_inset
+
+ or, by Theorem 1, if we can find a risk-neutral measure.
+ The payoff matrix 
+\begin_inset Formula $D$
+\end_inset
+
+ is given by 
+\begin_inset Formula $\begin{bmatrix}10/9 & 10/9 & 10/9 & 10/9\\
+60/9 & 60/9 & 40/9 & 20/9\\
+40/3 & 80/9 & 80/9 & 120/9
+\end{bmatrix}$
+\end_inset
+
+.
+ The price vector 
+\begin_inset Formula $S$
+\end_inset
+
+ at time 
+\begin_inset Formula $t=0$
+\end_inset
+
+ is 
+\begin_inset Formula $\begin{bmatrix}\$1\\
+\$5\\
+\$10
+\end{bmatrix}$
+\end_inset
+
+.
+ There exists a risk-neutral measure if we can solve the system 
+\begin_inset Formula 
+\begin{align*}
+1 & =q_{1}+q_{2}+q_{3}+q_{4}\\
+5 & =6q_{1}+6q_{2}+4q_{3}+2q_{4}\\
+10 & =12q_{1}+8q_{2}+8q_{3}+12q_{4}
+\end{align*}
+
+\end_inset
+
+Since there are 3 equations and 4 unknowns, I'll solve this in terms of
+ 
+\begin_inset Formula $q_{4}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+q_{1} & =\frac{1}{2}-q_{4}\\
+q_{2} & =2q_{4}\\
+q_{3} & =\frac{1}{2}-2q_{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ must be positive in order to be a risk-neutral probability measure, so
+ we must have that 
+\begin_inset Formula $0<q_{4}<\frac{1}{4}$
+\end_inset
+
+.
+ In other terms, any probability 
+\begin_inset Formula $q=(\frac{1}{2}-\lambda,2\lambda,\frac{1}{2}-2\lambda,\lambda),0<\lambda<\frac{1}{4}$
+\end_inset
+
+ is a risk neutral probability measure.
+ Consequently, the market is arbitrage free.
+\end_layout
+
+\begin_layout Standard
+2.
+ See above
+\end_layout
+
+\begin_layout Standard
+3.
+ We can replicate and price any asset as a convex combination between the
+ risk-free security and the risky assets across states.
+ Portfolios that can be spanned across states priced using the risk-neutral
+ measure are the set of attainable contingent claims.
+ This is given by 
+\begin_inset Formula 
+\[
+A=\begin{bmatrix}q_{1} & 6q_{1} & 12q_{1}\\
+q_{2} & 6q_{2} & 8q_{2}\\
+q_{3} & 4q_{3} & 8q_{3}\\
+q_{4} & 2q_{4} & 12q_{4}
+\end{bmatrix}\begin{bmatrix}\pi_{1}\\
+\pi_{2}\\
+\pi_{3}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ The discounted dividends of the contingent claim are given by 
+\begin_inset Formula 
+\[
+D=\begin{bmatrix}40/(10/9)\\
+30/(10/9)\\
+20/(10/9)\\
+10/(10/9)
+\end{bmatrix}=\begin{bmatrix}36\\
+27\\
+18\\
+9
+\end{bmatrix}
+\]
+
+\end_inset
+
+So the arbitrage-free price is given by
+\begin_inset Formula 
+\[
+P=\begin{bmatrix}\frac{1}{2}-\lambda & 2\lambda & \frac{1}{2}-2\lambda & \lambda\end{bmatrix}\begin{bmatrix}36\\
+27\\
+18\\
+9
+\end{bmatrix}=27-9\lambda,0<\lambda<\frac{1}{4}
+\]
+
+\end_inset
+
+ So 
+\begin_inset Formula $24.75<P<27$
+\end_inset
+
+, so those are the maximum and minimum prices of this contingent claim.
+\end_layout
+
+\begin_layout Section
+Question 2
+\end_layout
+
+\begin_layout Subsection*
+Edgeworth box economy with one consumption good, two states, and two consumers,
+ one of whom is risk-neutral while the other is risk-averse.
+\end_layout
+
+\begin_layout Enumerate
+Prove that if the two consumers assess the same probabilities for the two
+ states, then at an interior Arrow-Debreu equilibrium consumer 2 is fully
+ insured.
+ Sketch the Edgeworth box.
+\end_layout
+
+\begin_layout Enumerate
+Prove that if the two consumers assess different probabilities for the two
+ states, then at an interior A-D equilibrium consumer 2 is not fully insured.
+ Sketch the Edgeworth box.
+ In which state will she consume more? Also prove that consumer 1 does not
+ gain from trade in this case.
+\end_layout
+
+\end_body
+\end_document
